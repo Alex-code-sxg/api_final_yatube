@@ -3,11 +3,6 @@ from datetime import timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'hhz7l-ltdismtf@bzyz+rple7*s*w$jak%whj@(@u0eok^f9k4'
-
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -19,8 +14,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'djoser',
-    'api',
     'posts',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -75,7 +70,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 
