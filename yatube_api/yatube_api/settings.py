@@ -1,19 +1,11 @@
 import os
 from datetime import timedelta
 
-from dotenv import load_dotenv
+SECRET_KEY = 'hhz7l-ltdismtf@bzyz+rple7*s*w$jak%whj@(@u0eok^f9k4'
 
-load_dotenv()
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', 'testserver', ]
 
-
-SECRET_KEY = os.getenv('SECRET_KEY')
-print(SECRET_KEY)
-
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
-print(ALLOWED_HOSTS)
-
-DEBUG = os.getenv('DEBUG')
-print(DEBUG)
+DEBUG = True
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
